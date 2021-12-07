@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5E41F95-D777-4DE8-9177-6F1DE4292365}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ManagedSteam</RootNamespace>
+    <AssemblyName>SteamworksManaged</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppsGetCurrentBetaNameResult.cs" />
+    <Compile Include="AppsGetDLCDataByIndexResult.cs" />
+    <Compile Include="CallbackEvent.cs" />
+    <Compile Include="CallbackID.cs" />
+    <Compile Include="CallbackStructures\AppProofOfPurchaseKeyResponse.cs" />
+    <Compile Include="CallbackStructures\AssociateWithClanResult.cs" />
+    <Compile Include="CallbackStructures\AvatarImageLoaded.cs" />
+    <Compile Include="CallbackStructures\CheckFileSignature.cs" />
+    <Compile Include="CallbackStructures\ClanOfficerListResponse.cs" />
+    <Compile Include="CallbackStructures\ClientGameServerDeny.cs" />
+    <Compile Include="CallbackStructures\CloudDeletePublishedFileResult.cs" />
+    <Compile Include="CallbackStructures\CloudDownloadUGCResult.cs" />
+    <Compile Include="CallbackStructures\CloudEnumeratePublishedFilesByUserActionResult.cs" />
+    <Compile Include="CallbackStructures\CloudEnumerateUserPublishedFilesResult.cs" />
+    <Compile Include="CallbackStructures\CloudEnumerateUserSharedWorkshopFilesResult.cs" />
+    <Compile Include="CallbackStructures\CloudEnumerateUserSubscribedFilesResult.cs" />
+    <Compile Include="CallbackStructures\CloudEnumerateWorkshopFilesResult.cs" />
+    <Compile Include="CallbackStructures\CloudFileShareResult.cs" />
+    <Compile Include="CallbackStructures\CloudGetPublishedFileDetailsResult.cs" />
+    <Compile Include="CallbackStructures\CloudGetPublishedItemVoteDetailsResult.cs" />
+    <Compile Include="CallbackStructures\CloudPublishedFileUpdated.cs" />
+    <Compile Include="CallbackStructures\CloudPublishFileProgress.cs" />
+    <Compile Include="CallbackStructures\CloudPublishFileResult.cs" />
+    <Compile Include="CallbackStructures\CloudSetUserPublishedFileActionResult.cs" />
+    <Compile Include="CallbackStructures\CloudSubscribePublishedFileResult.cs" />
+    <Compile Include="CallbackStructures\CloudUnsubscribePublishedFileResult.cs" />
+    <Compile Include="CallbackStructures\CloudUpdatePublishedFileResult.cs" />
+    <Compile Include="CallbackStructures\CloudUpdateUserPublishedItemVoteResult.cs" />
+    <Compile Include="CallbackStructures\CloudUserVoteDetails.cs" />
+    <Compile Include="CallbackStructures\ComputeNewPlayerCompatibilityResult.cs" />
+    <Compile Include="CallbackStructures\DlcInstalled.cs" />
+    <Compile Include="CallbackStructures\DownloadClanActivityCountsResult.cs" />
+    <Compile Include="CallbackStructures\EncryptedAppTicketResponse.cs" />
+    <Compile Include="CallbackStructures\FavoritesListChanged.cs" />
+    <Compile Include="CallbackStructures\FriendRichPresenceUpdate.cs" />
+    <Compile Include="CallbackStructures\FriendsEnumerateFollowingList.cs" />
+    <Compile Include="CallbackStructures\FriendsGetFollowerCount.cs" />
+    <Compile Include="CallbackStructures\FriendsIsFollowing.cs" />
+    <Compile Include="CallbackStructures\GameConnectedChatJoin.cs" />
+    <Compile Include="CallbackStructures\GameConnectedChatLeave.cs" />
+    <Compile Include="CallbackStructures\GameConnectedClanChatMsg.cs" />
+    <Compile Include="CallbackStructures\GameConnectedFriendChatMsg.cs" />
+    <Compile Include="CallbackStructures\GameLobbyJoinRequested.cs" />
+    <Compile Include="CallbackStructures\GameOverlayActivated.cs" />
+    <Compile Include="CallbackStructures\GamepadTextInputDismissed.cs" />
+    <Compile Include="CallbackStructures\GameRichPresenceJoinRequested.cs" />
+    <Compile Include="CallbackStructures\GameServerChangeRequested.cs" />
+    <Compile Include="CallbackStructures\GameWebCallback.cs" />
+    <Compile Include="CallbackStructures\GetAuthSessionTicketResponse.cs" />
+    <Compile Include="CallbackStructures\GlobalAchievementPercentagesReady.cs" />
+    <Compile Include="CallbackStructures\GlobalStatsReceived.cs" />
+    <Compile Include="CallbackStructures\GSClientAchievementStatus.cs" />
+    <Compile Include="CallbackStructures\GSClientApprove.cs" />
+    <Compile Include="CallbackStructures\GSClientDeny.cs" />
+    <Compile Include="CallbackStructures\GSClientGroupStatus.cs" />
+    <Compile Include="CallbackStructures\GSClientKick.cs" />
+    <Compile Include="CallbackStructures\GSGameplayStats.cs" />
+    <Compile Include="CallbackStructures\GSPolicyResponse.cs" />
+    <Compile Include="CallbackStructures\GSReputation.cs" />
+    <Compile Include="CallbackStructures\GSStatsReceived.cs" />
+    <Compile Include="CallbackStructures\GSStatsStored.cs" />
+    <Compile Include="CallbackStructures\GSStatsUnloaded.cs" />
+    <Compile Include="CallbackStructures\HTTPRequestCompleted.cs" />
+    <Compile Include="CallbackStructures\HTTPRequestDataReceived.cs" />
+    <Compile Include="CallbackStructures\HTTPRequestHeadersReceived.cs" />
+    <Compile Include="CallbackStructures\IPCFailure.cs" />
+    <Compile Include="CallbackStructures\IPCountry.cs" />
+    <Compile Include="CallbackStructures\JoinClanChatRoomCompletionResult.cs" />
+    <Compile Include="CallbackStructures\LeaderboardFindResult.cs" />
+    <Compile Include="CallbackStructures\LeaderboardScoresDownloaded.cs" />
+    <Compile Include="CallbackStructures\LeaderboardScoreUploaded.cs" />
+    <Compile Include="CallbackStructures\LeaderboardUGCSet.cs" />
+    <Compile Include="CallbackStructures\LobbyChatMsg.cs" />
+    <Compile Include="CallbackStructures\LobbyChatUpdate.cs" />
+    <Compile Include="CallbackStructures\LobbyCreated.cs" />
+    <Compile Include="CallbackStructures\LobbyDataUpdate.cs" />
+    <Compile Include="CallbackStructures\LobbyEnter.cs" />
+    <Compile Include="CallbackStructures\LobbyGameCreated.cs" />
+    <Compile Include="CallbackStructures\LobbyInvite.cs" />
+    <Compile Include="CallbackStructures\LobbyKicked.cs" />
+    <Compile Include="CallbackStructures\LobbyMatchList.cs" />
+    <Compile Include="CallbackStructures\LowBatteryPower.cs" />
+    <Compile Include="CallbackStructures\MicroTxnAuthorizationResponse.cs" />
+    <Compile Include="CallbackStructures\NewLaunchQueryParameters.cs" />
+    <Compile Include="CallbackStructures\NumberOfCurrentPlayers.cs" />
+    <Compile Include="CallbackStructures\P2PSessionConnectFail.cs" />
+    <Compile Include="CallbackStructures\P2PSessionRequest.cs" />
+    <Compile Include="CallbackStructures\PersonaStateChange.cs" />
+    <Compile Include="CallbackStructures\RegisterActivationCodeResponse.cs" />
+    <Compile Include="CallbackStructures\ScreenshotReady.cs" />
+    <Compile Include="CallbackStructures\ScreenshotRequested.cs" />
+    <Compile Include="CallbackStructures\SocketStatusCallback.cs" />
+    <Compile Include="CallbackStructures\SteamAPICallCompleted.cs" />
+    <Compile Include="CallbackStructures\SteamServerConnectFailure.cs" />
+    <Compile Include="CallbackStructures\SteamServersConnected.cs" />
+    <Compile Include="CallbackStructures\SteamServersDisconnected.cs" />
+    <Compile Include="CallbackStructures\SteamShutdown.cs" />
+    <Compile Include="CallbackStructures\UGCQueryCompleted.cs" />
+    <Compile Include="CallbackStructures\UGCRequestUGCDetailsResult.cs" />
+    <Compile Include="CallbackStructures\UserAchievementIconFetched.cs" />
+    <Compile Include="CallbackStructures\UserAchievementStored.cs" />
+    <Compile Include="CallbackStructures\UserStatsReceived.cs" />
+    <Compile Include="CallbackStructures\UserStatsStored.cs" />
+    <Compile Include="CallbackStructures\UserStatsUnloaded.cs" />
+    <Compile Include="CallbackStructures\ValidateAuthTicketResponse.cs" />
+    <Compile Include="CloudGetFileNameAndSizeResult.cs" />
+    <Compile Include="CloudGetQuotaResult.cs" />
+    <Compile Include="CloudGetUGCDetailsResult.cs" />
+    <Compile Include="CloudGetUGCDownloadProgressResult.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="ErrorCodes.cs" />
+    <Compile Include="Exceptions\AlreadyLoadedException.cs" />
+    <Compile Include="Exceptions\CallbackStructSizeMismatchException.cs" />
+    <Compile Include="Exceptions\InvalidInterfaceVersionException.cs" />
+    <Compile Include="Exceptions\ManagedException.cs" />
+    <Compile Include="Exceptions\NativeException.cs" />
+    <Compile Include="Exceptions\NotAvailableInLiteException.cs" />
+    <Compile Include="Exceptions\SteamInitializeFailedException.cs" />
+    <Compile Include="Exceptions\SteamInterfaceInitializeFailedException.cs" />
+    <Compile Include="Exceptions\UnexpectedException.cs" />
+    <Compile Include="Exceptions\UsageAfterAPIShutdownException.cs" />
+    <Compile Include="FriendsGetClanActivityCountsResult.cs" />
+    <Compile Include="FriendsGetClanChatMessageResult.cs" />
+    <Compile Include="FriendsGetFriendGamePlayedResult.cs" />
+    <Compile Include="FriendsGetFriendMessageResult.cs" />
+    <Compile Include="GameServerGetAuthSessionTicketResult.cs" />
+    <Compile Include="GameServerGetNextOutgoingPacketResult.cs" />
+    <Compile Include="GameServerGetUserAchievementResult.cs" />
+    <Compile Include="GameServerSendUserConnectAndAuthenticateResult.cs" />
+    <Compile Include="GameServerStatsGetUserStatFloatResult.cs" />
+    <Compile Include="GameServerStatsGetUserStatIntResult.cs" />
+    <Compile Include="HTTPGetHTTPDownloadProgressPct.cs" />
+    <Compile Include="HTTPGetHTTPResponseBodySize.cs" />
+    <Compile Include="HTTPGetHTTPResponseHeaderSize.cs" />
+    <Compile Include="HTTPSendHTTPRequest.cs" />
+    <Compile Include="HTTPSendHTTPRequestAndStreamResponse.cs" />
+    <Compile Include="IApps.cs" />
+    <Compile Include="ICloud.cs" />
+    <Compile Include="IFriends.cs" />
+    <Compile Include="IGameServer.cs" />
+    <Compile Include="IGameServerStats.cs" />
+    <Compile Include="IHmd.cs" />
+    <Compile Include="IHTTP.cs" />
+    <Compile Include="IMatchmaking.cs" />
+    <Compile Include="IMatchmakingServers.cs" />
+    <Compile Include="Implementations\Apps.cs" />
+    <Compile Include="Implementations\Cloud.cs" />
+    <Compile Include="Implementations\Friends.cs" />
+    <Compile Include="Implementations\GameServer.cs" />
+    <Compile Include="Implementations\GameServerStats.cs" />
+    <Compile Include="Implementations\Hmd.cs" />
+    <Compile Include="Implementations\HTTP.cs" />
+    <Compile Include="Implementations\MatchMaking.cs" />
+    <Compile Include="Implementations\MatchmakingServers.cs" />
+    <Compile Include="Implementations\Networking.cs" />
+    <Compile Include="Implementations\Screenshots.cs" />
+    <Compile Include="Implementations\Stats.cs" />
+    <Compile Include="Implementations\SteamController.cs" />
+    <Compile Include="Implementations\SteamService.cs" />
+    <Compile Include="Implementations\SteamServiceGameServer.cs" />
+    <Compile Include="Implementations\UGC.cs" />
+    <Compile Include="Implementations\User.cs" />
+    <Compile Include="Implementations\Utils.cs" />
+    <Compile Include="INetworking.cs" />
+    <Compile Include="IScreenshots.cs" />
+    <Compile Include="IStats.cs" />
+    <Compile Include="ISteamController.cs" />
+    <Compile Include="IUGC.cs" />
+    <Compile Include="IUser.cs" />
+    <Compile Include="IUtils.cs" />
+    <Compile Include="LoadStatus.cs" />
+    <Compile Include="ManagedCallback.cs" />
+    <Compile Include="ManagedResultCallback.cs" />
+    <Compile Include="MatchMakingGetFavoriteGameResult.cs" />
+    <Compile Include="MatchmakingGetLobbyChatEntryResult.cs" />
+    <Compile Include="MatchMakingGetLobbyDataByIndexResult.cs" />
+    <Compile Include="MatchMakingGetLobbyGameServerResult.cs" />
+    <Compile Include="MatchmakingPingResponse.cs" />
+    <Compile Include="MatchmakingPingResponse_ServerFailedToRespond.cs" />
+    <Compile Include="MatchmakingPingResponse_ServerRespondedCallback.cs" />
+    <Compile Include="MatchmakingPlayersResponse.cs" />
+    <Compile Include="MatchmakingPlayersResponse_AddPlayerToList.cs" />
+    <Compile Include="MatchmakingPlayersResponse_PlayersFailedToRespond.cs" />
+    <Compile Include="MatchmakingPlayersResponse_PlayersRefreshComplete.cs" />
+    <Compile Include="MatchmakingRulesResponse.cs" />
+    <Compile Include="MatchmakingRulesResponse_RulesFailedToRespond.cs" />
+    <Compile Include="MatchmakingRulesResponse_RulesRefreshComplete.cs" />
+    <Compile Include="MatchmakingRulesResponse_RulesResponded.cs" />
+    <Compile Include="MatchmakingServerListResponse.cs" />
+    <Compile Include="MatchmakingServerListResponse_RefreshComplete.cs" />
+    <Compile Include="MatchmakingServerListResponse_ServerFailedToRespond.cs" />
+    <Compile Include="MatchmakingServerListResponse_ServerRespondedCallback.cs" />
+    <Compile Include="NativeCallback.cs" />
+    <Compile Include="NativeConstants.cs" />
+    <Compile Include="NativeHelpers.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="NativeResultCallback.cs" />
+    <Compile Include="NetworkingGetListenSocketInfoResult.cs" />
+    <Compile Include="NetworkingGetP2PSessionStateResult.cs" />
+    <Compile Include="NetworkingGetSocketInfoResult.cs" />
+    <Compile Include="NetworkingIsDataAvaibleOnSocketResult.cs" />
+    <Compile Include="NetworkingIsDataAvailableResult.cs" />
+    <Compile Include="NetworkingIsP2PPacketAvailableResult.cs" />
+    <Compile Include="NetworkingReadP2PPacketResult.cs" />
+    <Compile Include="NetworkingRetrieveDataFromSocketResult.cs" />
+    <Compile Include="NetworkingRetrieveDataResult.cs" />
+    <Compile Include="OverlayDialog.cs" />
+    <Compile Include="OverlayDialogToUser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultEvent.cs" />
+    <Compile Include="ResultID.cs" />
+    <Compile Include="ServicesGameServer.cs" />
+    <Compile Include="StatsGetAchievementAndUnlockTimeResult.cs" />
+    <Compile Include="StatsGetAchievementResult.cs" />
+    <Compile Include="StatsGetAchievmentAchievedPercent.cs" />
+    <Compile Include="StatsGetGlobalStat.cs" />
+    <Compile Include="StatsGetGlobalStatHistory.cs" />
+    <Compile Include="StatsGetMostAchievedAchievementInfo.cs" />
+    <Compile Include="StatsGetNextMostAchievedAchievementInfo.cs" />
+    <Compile Include="StatsGetStatFloatResult.cs" />
+    <Compile Include="StatsGetStatIntResult.cs" />
+    <Compile Include="StatsGetUserAchievementAndUnlockTimeResult.cs" />
+    <Compile Include="StatsGetUserAchievementResult.cs" />
+    <Compile Include="StatsGetUserStatResult.cs" />
+    <Compile Include="Steam.cs" />
+    <Compile Include="SteamControllerGetControllerStateResult.cs" />
+    <Compile Include="SteamEncryptedAppTicket.cs" />
+    <Compile Include="SteamTypes\AccountID.cs" />
+    <Compile Include="SteamTypes\AchievementIcon.cs" />
+    <Compile Include="SteamTypes\AppID.cs" />
+    <Compile Include="SteamTypes\AuthSessionResponse.cs" />
+    <Compile Include="SteamTypes\AuthTicketHandle.cs" />
+    <Compile Include="SteamTypes\BeginAuthSessionResult.cs" />
+    <Compile Include="SteamTypes\ChatEntryType.cs" />
+    <Compile Include="SteamTypes\ChatMemberStateChange.cs" />
+    <Compile Include="SteamTypes\ChatRoomEnterResponse.cs" />
+    <Compile Include="SteamTypes\DenyReason.cs" />
+    <Compile Include="SteamTypes\DepotID.cs" />
+    <Compile Include="SteamTypes\DistortionCoordinates.cs" />
+    <Compile Include="SteamTypes\ECheckFileSignature.cs" />
+    <Compile Include="SteamTypes\EUGCMatchingUGCType.cs" />
+    <Compile Include="SteamTypes\EUGCQuery.cs" />
+    <Compile Include="SteamTypes\EUserUGCListSortOrder.cs" />
+    <Compile Include="SteamTypes\FriendFlags.cs" />
+    <Compile Include="SteamTypes\FriendGameInfo.cs" />
+    <Compile Include="SteamTypes\FriendRelationship.cs" />
+    <Compile Include="SteamTypes\GameID.cs" />
+    <Compile Include="SteamTypes\GamepadTextInputLineMode.cs" />
+    <Compile Include="SteamTypes\GamepadTextInputMode.cs" />
+    <Compile Include="SteamTypes\GameServerItem.cs" />
+    <Compile Include="SteamTypes\GraphicsAPIConvention.cs" />
+    <Compile Include="SteamTypes\HmdError.cs" />
+    <Compile Include="SteamTypes\HmdEye.cs" />
+    <Compile Include="SteamTypes\HmdMatrix34.cs" />
+    <Compile Include="SteamTypes\HmdMatrix44.cs" />
+    <Compile Include="SteamTypes\HmdTrackingResult.cs" />
+    <Compile Include="SteamTypes\HTTPMethod.cs" />
+    <Compile Include="SteamTypes\HTTPRequestHandle.cs" />
+    <Compile Include="SteamTypes\HTTPStatusCode.cs" />
+    <Compile Include="SteamTypes\IconHandle.cs" />
+    <Compile Include="SteamTypes\ImageHandle.cs" />
+    <Compile Include="SteamTypes\LeaderboardDataRequest.cs" />
+    <Compile Include="SteamTypes\LeaderboardDisplayType.cs" />
+    <Compile Include="SteamTypes\LeaderboardEntriesHandle.cs" />
+    <Compile Include="SteamTypes\LeaderboardEntry.cs" />
+    <Compile Include="SteamTypes\LeaderboardHandle.cs" />
+    <Compile Include="SteamTypes\LeaderboardSortMethod.cs" />
+    <Compile Include="SteamTypes\LeaderboardUploadScoreMethod.cs" />
+    <Compile Include="SteamTypes\LobbyComparison.cs" />
+    <Compile Include="SteamTypes\LobbyDistanceFilter.cs" />
+    <Compile Include="SteamTypes\LobbyType.cs" />
+    <Compile Include="SteamTypes\MatchMakingKeyValuePair.cs" />
+    <Compile Include="SteamTypes\MatchMakingServerResponse.cs" />
+    <Compile Include="SteamTypes\NetListenSocketHandle.cs" />
+    <Compile Include="SteamTypes\NetSocketConnectionType.cs" />
+    <Compile Include="SteamTypes\NetSocketHandle.cs" />
+    <Compile Include="SteamTypes\NotificationPosition.cs" />
+    <Compile Include="SteamTypes\OverlayToStoreFlag.cs" />
+    <Compile Include="SteamTypes\P2PSend.cs" />
+    <Compile Include="SteamTypes\P2PSessionError.cs" />
+    <Compile Include="SteamTypes\P2PSessionState.cs" />
+    <Compile Include="SteamTypes\PersonaChange.cs" />
+    <Compile Include="SteamTypes\PersonaState.cs" />
+    <Compile Include="SteamTypes\PublishedFileId.cs" />
+    <Compile Include="SteamTypes\PublishedFileUpdateHandle.cs" />
+    <Compile Include="SteamTypes\RegisterActivationCodeResult.cs" />
+    <Compile Include="SteamTypes\RemoteStoragePlatform.cs" />
+    <Compile Include="SteamTypes\RemoteStoragePublishedFileVisibility.cs" />
+    <Compile Include="SteamTypes\ResolveConflict.cs" />
+    <Compile Include="SteamTypes\Result.cs" />
+    <Compile Include="SteamTypes\ScreenshotHandle.cs" />
+    <Compile Include="SteamTypes\ServerListRequestHandle.cs" />
+    <Compile Include="SteamTypes\ServerMode.cs" />
+    <Compile Include="SteamTypes\ServerNetworkAddress.cs" />
+    <Compile Include="SteamTypes\ServerQueryHandle.cs" />
+    <Compile Include="SteamTypes\SNetSocketState.cs" />
+    <Compile Include="SteamTypes\SteamAPICall.cs" />
+    <Compile Include="SteamTypes\SteamAPICallFailure.cs" />
+    <Compile Include="SteamTypes\SteamControllerButtons.cs" />
+    <Compile Include="SteamTypes\SteamControllerPad.cs" />
+    <Compile Include="SteamTypes\SteamControllerState.cs" />
+    <Compile Include="SteamTypes\SteamID.cs" />
+    <Compile Include="SteamTypes\SteamParamStringArray.cs" />
+    <Compile Include="SteamTypes\UGCDetails.cs" />
+    <Compile Include="SteamTypes\UGCHandle.cs" />
+    <Compile Include="SteamTypes\UGCQueryHandle.cs" />
+    <Compile Include="SteamTypes\UGCReadAction.cs" />
+    <Compile Include="SteamTypes\Universe.cs" />
+    <Compile Include="SteamTypes\UserHasLicenseForAppResult.cs" />
+    <Compile Include="SteamTypes\UserRestriction.cs" />
+    <Compile Include="SteamTypes\UserUGCList.cs" />
+    <Compile Include="SteamTypes\VoiceResult.cs" />
+    <Compile Include="SteamTypes\WorkshopEnumerationType.cs" />
+    <Compile Include="SteamTypes\WorkshopFileAction.cs" />
+    <Compile Include="SteamTypes\WorkshopFileType.cs" />
+    <Compile Include="SteamTypes\WorkshopVideoProviders.cs" />
+    <Compile Include="SteamTypes\WorkshopVote.cs" />
+    <Compile Include="StringID.cs" />
+    <Compile Include="StringMap.cs" />
+    <Compile Include="UGCGetQueryUGCResultResult.cs" />
+    <Compile Include="UserDecompressVoiceResult.cs" />
+    <Compile Include="UserGetAuthSessionTicketResult.cs" />
+    <Compile Include="UserGetAvailableVoiceResult.cs" />
+    <Compile Include="UserGetEncryptedAppTicketResult.cs" />
+    <Compile Include="UserGetUserDataFolder.cs" />
+    <Compile Include="UserGetVoiceResult.cs" />
+    <Compile Include="Utility\DelegateJob.cs" />
+    <Compile Include="Utility\DisposableClass.cs" />
+    <Compile Include="Utility\IJob.cs" />
+    <Compile Include="Utility\JobManager.cs" />
+    <Compile Include="Utility\NativeBuffer.cs" />
+    <Compile Include="Utility\NativeString.cs" />
+    <Compile Include="Utility\StringHelper.cs" />
+    <Compile Include="UtilsGetCSERIPPortResult.cs" />
+    <Compile Include="UtilsGetEnteredGamepadTextInputResult.cs" />
+    <Compile Include="UtilsGetImageSizeResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{e5e41f95-d777-4de8-9177-6f1de4292364}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System\System.csproj">
+      <Project>{e5e41f95-d777-4de8-9177-6f1de4292368}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

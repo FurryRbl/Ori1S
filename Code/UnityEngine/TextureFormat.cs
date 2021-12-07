@@ -1,0 +1,105 @@
+﻿using System;
+
+namespace UnityEngine
+{
+	// Token: 0x020002A6 RID: 678
+	public enum TextureFormat
+	{
+		// Token: 0x04000A5C RID: 2652
+		Alpha8 = 1,
+		// Token: 0x04000A5D RID: 2653
+		ARGB4444,
+		// Token: 0x04000A5E RID: 2654
+		RGB24,
+		// Token: 0x04000A5F RID: 2655
+		RGBA32,
+		// Token: 0x04000A60 RID: 2656
+		ARGB32,
+		// Token: 0x04000A61 RID: 2657
+		RGB565 = 7,
+		// Token: 0x04000A62 RID: 2658
+		R16 = 9,
+		// Token: 0x04000A63 RID: 2659
+		DXT1,
+		// Token: 0x04000A64 RID: 2660
+		DXT5 = 12,
+		// Token: 0x04000A65 RID: 2661
+		RGBA4444,
+		// Token: 0x04000A66 RID: 2662
+		BGRA32,
+		// Token: 0x04000A67 RID: 2663
+		RHalf,
+		// Token: 0x04000A68 RID: 2664
+		RGHalf,
+		// Token: 0x04000A69 RID: 2665
+		RGBAHalf,
+		// Token: 0x04000A6A RID: 2666
+		RFloat,
+		// Token: 0x04000A6B RID: 2667
+		RGFloat,
+		// Token: 0x04000A6C RID: 2668
+		RGBAFloat,
+		// Token: 0x04000A6D RID: 2669
+		YUY2,
+		// Token: 0x04000A6E RID: 2670
+		DXT1Crunched = 28,
+		// Token: 0x04000A6F RID: 2671
+		DXT5Crunched,
+		// Token: 0x04000A70 RID: 2672
+		PVRTC_RGB2,
+		// Token: 0x04000A71 RID: 2673
+		PVRTC_RGBA2,
+		// Token: 0x04000A72 RID: 2674
+		PVRTC_RGB4,
+		// Token: 0x04000A73 RID: 2675
+		PVRTC_RGBA4,
+		// Token: 0x04000A74 RID: 2676
+		ETC_RGB4,
+		// Token: 0x04000A75 RID: 2677
+		ATC_RGB4,
+		// Token: 0x04000A76 RID: 2678
+		ATC_RGBA8,
+		// Token: 0x04000A77 RID: 2679
+		EAC_R = 41,
+		// Token: 0x04000A78 RID: 2680
+		EAC_R_SIGNED,
+		// Token: 0x04000A79 RID: 2681
+		EAC_RG,
+		// Token: 0x04000A7A RID: 2682
+		EAC_RG_SIGNED,
+		// Token: 0x04000A7B RID: 2683
+		ETC2_RGB,
+		// Token: 0x04000A7C RID: 2684
+		ETC2_RGBA1,
+		// Token: 0x04000A7D RID: 2685
+		ETC2_RGBA8,
+		// Token: 0x04000A7E RID: 2686
+		ASTC_RGB_4x4,
+		// Token: 0x04000A7F RID: 2687
+		ASTC_RGB_5x5,
+		// Token: 0x04000A80 RID: 2688
+		ASTC_RGB_6x6,
+		// Token: 0x04000A81 RID: 2689
+		ASTC_RGB_8x8,
+		// Token: 0x04000A82 RID: 2690
+		ASTC_RGB_10x10,
+		// Token: 0x04000A83 RID: 2691
+		ASTC_RGB_12x12,
+		// Token: 0x04000A84 RID: 2692
+		ASTC_RGBA_4x4,
+		// Token: 0x04000A85 RID: 2693
+		ASTC_RGBA_5x5,
+		// Token: 0x04000A86 RID: 2694
+		ASTC_RGBA_6x6,
+		// Token: 0x04000A87 RID: 2695
+		ASTC_RGBA_8x8,
+		// Token: 0x04000A88 RID: 2696
+		ASTC_RGBA_10x10,
+		// Token: 0x04000A89 RID: 2697
+		ASTC_RGBA_12x12,
+		// Token: 0x04000A8A RID: 2698
+		ETC_RGB4_3DS,
+		// Token: 0x04000A8B RID: 2699
+		ETC_RGBA8_3DS
+	}
+}

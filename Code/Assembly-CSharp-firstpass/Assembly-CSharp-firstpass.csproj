@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5E41F95-D777-4DE8-9177-6F1DE429235D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Assembly-CSharp-firstpass</RootNamespace>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlurEffect.cs" />
+    <Compile Include="ColorCorrectionEffect.cs" />
+    <Compile Include="ContrastEffect.cs" />
+    <Compile Include="ContrastStretchEffect.cs" />
+    <Compile Include="EdgeDetectEffect.cs" />
+    <Compile Include="GlowEffect.cs" />
+    <Compile Include="GrayscaleEffect.cs" />
+    <Compile Include="ImageEffectBase.cs" />
+    <Compile Include="ImageEffects.cs" />
+    <Compile Include="MotionBlur.cs" />
+    <Compile Include="NoiseEffect.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SepiaToneEffect.cs" />
+    <Compile Include="SSAOEffect.cs" />
+    <Compile Include="TwirlEffect.cs" />
+    <Compile Include="VortexEffect.cs" />
+    <Compile Include="Water.cs" />
+    <Compile Include="Water3.cs" />
+    <Compile Include="Water3Float.cs" />
+    <Compile Include="Water3Manager.cs" />
+    <Compile Include="Water3UnderwaterEffect.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mscorlib\mscorlib.csproj">
+      <Project>{e5e41f95-d777-4de8-9177-6f1de4292364}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnityEngine\UnityEngine.csproj">
+      <Project>{e5e41f95-d777-4de8-9177-6f1de429236b}</Project>
+      <Name>UnityEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

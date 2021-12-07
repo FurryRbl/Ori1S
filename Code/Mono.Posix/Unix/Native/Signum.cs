@@ -1,0 +1,80 @@
+﻿using System;
+
+namespace Mono.Unix.Native
+{
+	// Token: 0x0200003A RID: 58
+	[Map]
+	public enum Signum
+	{
+		// Token: 0x040001C0 RID: 448
+		SIGHUP = 1,
+		// Token: 0x040001C1 RID: 449
+		SIGINT,
+		// Token: 0x040001C2 RID: 450
+		SIGQUIT,
+		// Token: 0x040001C3 RID: 451
+		SIGILL,
+		// Token: 0x040001C4 RID: 452
+		SIGTRAP,
+		// Token: 0x040001C5 RID: 453
+		SIGABRT,
+		// Token: 0x040001C6 RID: 454
+		SIGIOT = 6,
+		// Token: 0x040001C7 RID: 455
+		SIGBUS,
+		// Token: 0x040001C8 RID: 456
+		SIGFPE,
+		// Token: 0x040001C9 RID: 457
+		SIGKILL,
+		// Token: 0x040001CA RID: 458
+		SIGUSR1,
+		// Token: 0x040001CB RID: 459
+		SIGSEGV,
+		// Token: 0x040001CC RID: 460
+		SIGUSR2,
+		// Token: 0x040001CD RID: 461
+		SIGPIPE,
+		// Token: 0x040001CE RID: 462
+		SIGALRM,
+		// Token: 0x040001CF RID: 463
+		SIGTERM,
+		// Token: 0x040001D0 RID: 464
+		SIGSTKFLT,
+		// Token: 0x040001D1 RID: 465
+		SIGCLD,
+		// Token: 0x040001D2 RID: 466
+		SIGCHLD = 17,
+		// Token: 0x040001D3 RID: 467
+		SIGCONT,
+		// Token: 0x040001D4 RID: 468
+		SIGSTOP,
+		// Token: 0x040001D5 RID: 469
+		SIGTSTP,
+		// Token: 0x040001D6 RID: 470
+		SIGTTIN,
+		// Token: 0x040001D7 RID: 471
+		SIGTTOU,
+		// Token: 0x040001D8 RID: 472
+		SIGURG,
+		// Token: 0x040001D9 RID: 473
+		SIGXCPU,
+		// Token: 0x040001DA RID: 474
+		SIGXFSZ,
+		// Token: 0x040001DB RID: 475
+		SIGVTALRM,
+		// Token: 0x040001DC RID: 476
+		SIGPROF,
+		// Token: 0x040001DD RID: 477
+		SIGWINCH,
+		// Token: 0x040001DE RID: 478
+		SIGPOLL,
+		// Token: 0x040001DF RID: 479
+		SIGIO = 29,
+		// Token: 0x040001E0 RID: 480
+		SIGPWR,
+		// Token: 0x040001E1 RID: 481
+		SIGSYS,
+		// Token: 0x040001E2 RID: 482
+		SIGUNUSED = 31
+	}
+}

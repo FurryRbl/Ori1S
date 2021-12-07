@@ -1,0 +1,53 @@
+﻿using System;
+
+namespace Mono.Unix.Native
+{
+	// Token: 0x0200003D RID: 61
+	[Map]
+	[CLSCompliant(false)]
+	public enum PathconfName
+	{
+		// Token: 0x040001EC RID: 492
+		_PC_LINK_MAX,
+		// Token: 0x040001ED RID: 493
+		_PC_MAX_CANON,
+		// Token: 0x040001EE RID: 494
+		_PC_MAX_INPUT,
+		// Token: 0x040001EF RID: 495
+		_PC_NAME_MAX,
+		// Token: 0x040001F0 RID: 496
+		_PC_PATH_MAX,
+		// Token: 0x040001F1 RID: 497
+		_PC_PIPE_BUF,
+		// Token: 0x040001F2 RID: 498
+		_PC_CHOWN_RESTRICTED,
+		// Token: 0x040001F3 RID: 499
+		_PC_NO_TRUNC,
+		// Token: 0x040001F4 RID: 500
+		_PC_VDISABLE,
+		// Token: 0x040001F5 RID: 501
+		_PC_SYNC_IO,
+		// Token: 0x040001F6 RID: 502
+		_PC_ASYNC_IO,
+		// Token: 0x040001F7 RID: 503
+		_PC_PRIO_IO,
+		// Token: 0x040001F8 RID: 504
+		_PC_SOCK_MAXBUF,
+		// Token: 0x040001F9 RID: 505
+		_PC_FILESIZEBITS,
+		// Token: 0x040001FA RID: 506
+		_PC_REC_INCR_XFER_SIZE,
+		// Token: 0x040001FB RID: 507
+		_PC_REC_MAX_XFER_SIZE,
+		// Token: 0x040001FC RID: 508
+		_PC_REC_MIN_XFER_SIZE,
+		// Token: 0x040001FD RID: 509
+		_PC_REC_XFER_ALIGN,
+		// Token: 0x040001FE RID: 510
+		_PC_ALLOC_SIZE_MIN,
+		// Token: 0x040001FF RID: 511
+		_PC_SYMLINK_MAX,
+		// Token: 0x04000200 RID: 512
+		_PC_2_SYMLINKS
+	}
+}
